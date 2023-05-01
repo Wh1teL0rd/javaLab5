@@ -12,13 +12,13 @@ class RemoveWordsWithNumbersTest {
     public void removeWordsWithNumbersSuccess() {
         String textBeforeRemovingNumbers = "test text: a12i, a1234b, a12345b, 123a, a123, a12-345b, 12345b, a12345";
         String expectedString = "test text: a12i, , , 123a, a123, , 12345b, a12345";
-        String result = remover.removeWordsWithNumbers(textBeforeRemovingNumbers,minDights);
+        String result = remover.removeWordsWithNumbers(textBeforeRemovingNumbers, minDights);
 
-        assertEquals(expectedString,result);
+        assertEquals(expectedString, result);
     }
 
     @Test
-    public void removeWordsWithNumbersEmptyString(){
+    public void removeWordsWithNumbersEmptyString() {
         String emptyString = "";
         String result = remover.removeWordsWithNumbers(emptyString, 1);
 
